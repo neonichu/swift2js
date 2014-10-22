@@ -171,9 +171,9 @@ class GenericType: NSObject
         if let tuple = argsType as? TupleType {
             argumentTypes += tuple.types;
         }
-        else {
+        /*else {
             argumentTypes += argsType;
-        }
+        }*/
         
         self.returnType = returnType;
         super.init(.DICTIONARY);
